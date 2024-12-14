@@ -1,0 +1,234 @@
+body{
+    font-family:"Montserrat","Bebas Neue","Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #f5f5f5;
+    text-align: center;
+    box-sizing: border-box;
+}
+<!--Styling For The Navigation Bar-->
+
+li, a{
+    font-family:"Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color:whitesmoke;
+    text-decoration: none;
+}
+header{
+    width:92%;
+    height:11%;
+    position:fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5%;
+    background-color:#781a1f;
+}
+.Logo{
+    cursor: pointer;
+}
+.Pages{
+    list-style: none;
+}
+.Pages li {
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+}
+.Pages li.ActivePage::after{
+    position: absolute;
+    content: "";
+    height:5px;
+    width: 78%;
+    background-color: rgba(255, 229, 0, 1);
+    bottom: -5px;
+    left:20px;
+    border-radius: 50px;
+}
+.Pages li a {
+    opacity: 0.7;
+    transition: all 0.5s ease 0s;
+}
+.Pages li a:hover{
+    color:rgba(255, 229, 0, 1);
+    opacity: 1;
+}
+.Welcome{
+    display: flex;
+    position: relative;
+    background-image: url('Images/x9.jpg');
+    color:whitesmoke;
+    padding:15% ;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    box-shadow: 0px 4px 8px black;
+}
+.Welcome h2{
+    font-size:45px;
+    margin-left:2%;
+    margin-right: 2%;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    font-family:"Montserrat", sans-serif;
+}
+.OverView{
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.OverView p{
+    font-family:"Montserrat", sans-serif;
+    font-size: 19px;
+    padding-left:20px;
+    text-align: justify;
+    padding: 10px 0 ;
+}
+.Trophies{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+.Trophy1{
+    background-color:#1a1a1a;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+  }
+  .Trophy2{
+    background-color:#ffffff;
+    padding: 20px;
+    overflow: hidden;
+    width: 100%;
+    color: #1a1a1a;
+    justify-content: center;
+    text-align: center;
+  }
+  .Trophies h1{
+    font-family:"Montserrat", sans-serif;
+    font-size: 27px;
+    padding-left:20px;
+    text-align: center;
+    padding: 10px 0 ;
+  }
+  .Trophies p{
+    font-family:"Montserrat", sans-serif;
+    font-size: 22px;
+    padding-left:20px;
+    text-align: center;
+    padding: 10px 0 ;
+  }
+  .Trophies img {
+    margin-right: 90px;
+    float: left;
+    height: 350px;
+    width: 700px;
+  }
+
+
+
+
+footer .Container{
+    background-color:#781a1f;
+}
+.Row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.Col h4{
+    color:whitesmoke;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+}
+.Col h4::after{
+    position: absolute;
+    content: "";
+    height:5px;
+    background-color: #808080;
+    bottom: -10px;
+    border-radius: 50px;
+}
+#Pro::after{
+    width: 69%;
+    left:27px;
+}
+#News::after{
+    width: 47%;
+    left:72px;
+}
+#Visit::after{
+    width: 21%;
+    left:159px;
+}
+.Col ul{
+    list-style: none;
+    display: inline-block;
+}
+.Col ul li{
+    padding: 10px 0;
+    justify-content:first baseline;
+    display: flex;
+    margin-left:-10px;
+    font-size: 18px;
+}
+.Col ul li a{
+color:whitesmoke;
+text-decoration: none;
+font-size: 22px;
+opacity:0.7;
+transition: 0.3s;
+}
+.Col ul li a:hover{
+    color:rgba(255, 229, 0, 1);
+    opacity: 1;
+}
+.Col input{
+    border:none;
+    width:250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+button{
+    padding: 18px 50px;
+    background-color: #808080;
+    color:#000000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.3s;
+    margin-top: 30px;
+}
+button:hover{
+    background-color:rgba(255, 229, 0, 1);
+    transform: scale(1.2);
+}
+hr{
+    margin-bottom: -20px;
+   background-color:#808080;
+}
+.Column p{
+    color: whitesmoke;
+    margin-bottom: -40px;
+}
+.Social i {
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 40px;
+    margin: 0 29px;
+    transition:0.3s;
+}
+.Social i:hover{
+    color: rgba(255, 229, 0, 1);
+    transform: scale(1.2);
+}

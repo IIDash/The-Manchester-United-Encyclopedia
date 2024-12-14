@@ -1,0 +1,357 @@
+body{
+    font-family:"Montserrat","Bebas Neue","Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #f5f5f5;
+    text-align: center;
+    box-sizing: border-box;
+}
+<!--Styling For The Navigation Bar-->
+
+li, a{
+    font-family:"Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color:whitesmoke;
+    text-decoration: none;
+}
+header{
+    width:92%;
+    height:11%;
+    position:fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5%;
+    background-color:#781a1f;
+}
+.Logo{
+    cursor: pointer;
+}
+.Pages{
+    list-style: none;
+}
+.Pages li {
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+}
+.Pages li.ActivePage::after{
+    position: absolute;
+    content: "";
+    height:5px;
+    width: 79%;
+    background-color: rgba(255, 229, 0, 1);
+    bottom: -5px;
+    left:20px;
+    border-radius: 50px;
+}
+.Pages li a {
+    opacity: 0.7;
+    transition: all 0.5s ease 0s;
+}
+.Pages li a:hover{
+    color:rgba(255, 229, 0, 1);
+    opacity: 1;
+}
+.Welcome{
+    display: flex;
+    position: relative;
+    background-image: url('Images/x10.jpg');
+    color:whitesmoke;
+    padding:15% ;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    box-shadow: 0px 4px 8px black;
+}
+.Welcome h2{
+    font-size:45px;
+    margin-left:2%;
+    margin-right: 2%;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    font-family:"Montserrat", sans-serif;
+}
+.TheStory{
+    margin-left: 26%;
+    margin-right: 26%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.TheStory p{
+    font-family:"Montserrat", sans-serif;
+    font-size: 19px;
+    padding-left:20px;
+    text-align: justify;
+    padding: 10px 0 ;
+}
+
+.Accordion{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+.Accordion .CoBx{
+    padding-bottom: 10px;
+    position:relative;
+}
+.Accordion .CBx .Label{
+    margin-bottom:10px;
+    font-size: 52px;
+    text-align: center;
+    position: relative;
+    padding:10px;
+    cursor:pointer;
+    height:500px;
+    overflow: hidden;
+}
+.Accordion .CBx .Label p{
+    color: whitesmoke;
+    transition:0.3s;
+}
+.Accordion .CBx .Label p:hover{
+    color: rgba(255, 229, 0, 1);
+    transform: scale(1.1);
+}
+.Accordion .CBx .Content{
+    margin-left: 26%;
+    margin-right: 26%;
+    text-align: justify;
+    position: relative;
+    background: whitesmoke;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.Accordion .CBx.active .Content{
+    font-family:"Montserrat", sans-serif;
+    font-size: 19px;
+    padding-left:20px;
+    padding:2px;
+}
+.Accordion .CBx.active #C_One{
+    height:1245px;
+}
+.Accordion .CBx.active #C_Two{
+    height:1225px;
+}
+.Accordion .CBx.active #C_Three{
+    height:1265px;
+}
+.Accordion .CBx.active #C_Four{
+    height:1235px;
+}
+.Accordion .CBx.active #C_Five{
+    height:1235px;
+}
+.Accordion .CBx.active #C_Six{
+    height:1365px;
+}
+.Accordion .CBx.active #C_Seven{
+    height:1425px;
+}
+.Accordion .CBx.active #C_Eight{
+    height:1385px;
+}
+.Accordion .CBx.active #C_Nine{
+    height:1405px;
+}
+.Accordion .CBx.active #C_Ten{
+    height:2245px;
+}
+.Accordion .CBx.active #C_Eleven{
+    height:2255px;
+}
+.Accordion .CBx.active #C_Twelve{
+    height:6418px;
+}  
+
+#One{
+    background-image: url('Images/One.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Two{
+    background-image: url('Images/Two.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Three{
+    background-image: url('Images/Three.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Four{
+    background-image: url('Images/Four.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Five{
+    background-image: url('Images/Five.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Six{
+    background-image: url('Images/Six.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Seven{
+    background-image: url('Images/Seven.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Eight{
+    background-image: url('Images/Eight.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Nine{
+    background-image: url('Images/Nine.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Ten{
+    background-image: url('Images/Ten.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Eleven{
+    background-image: url('Images/Eleven.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#Twelve{
+    background-image: url('Images/Twelve.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+footer .Container{
+    background-color:#781a1f;
+}
+.Row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.Col h4{
+    color:whitesmoke;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+}
+.Col h4::after{
+    position: absolute;
+    content: "";
+    height:5px;
+    background-color: #808080;
+    bottom: -10px;
+    border-radius: 50px;
+}
+#Pro::after{
+    width: 69%;
+    left:27px;
+}
+#News::after{
+    width: 47%;
+    left:72px;
+}
+#Visit::after{
+    width: 21%;
+    left:159px;
+}
+.Col ul{
+    list-style: none;
+    display: inline-block;
+}
+.Col ul li{
+    padding: 10px 0;
+    justify-content:first baseline;
+    display: flex;
+    margin-left:-10px;
+    font-size: 18px;
+}
+.Col ul li a{
+color:whitesmoke;
+text-decoration: none;
+font-size: 22px;
+opacity:0.7;
+transition: 0.3s;
+}
+.Col ul li a:hover{
+    color:rgba(255, 229, 0, 1);
+    opacity: 1;
+}
+.Col input{
+    border:none;
+    width:250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+button{
+    padding: 18px 50px;
+    background-color: #808080;
+    color:#000000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.3s;
+    margin-top: 30px;
+}
+button:hover{
+    background-color:rgba(255, 229, 0, 1);
+    transform: scale(1.2);
+}
+hr{
+    margin-bottom: -20px;
+   background-color:#808080;
+}
+.Column p{
+    color: whitesmoke;
+    margin-bottom: -40px;
+}
+.Social i {
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 40px;
+    margin: 0 29px;
+    transition:0.3s;
+}
+.Social i:hover{
+    color: rgba(255, 229, 0, 1);
+    transform: scale(1.2);
+}

@@ -1,0 +1,340 @@
+body{
+    font-family:"Montserrat","Bebas Neue","Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #f5f5f5;
+    text-align: center;
+    box-sizing: border-box;
+}
+<!--Styling For The Navigation Bar-->
+
+li, a{
+    font-family:"Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color:whitesmoke;
+    text-decoration: none;
+}
+header{
+    width:92%;
+    height:11%;
+    position:fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 5%;
+    background-color:#781a1f;
+}
+.Logo{
+    cursor: pointer;
+}
+.Pages{
+    list-style: none;
+}
+.Pages li {
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+}
+.Pages li.ActivePage::after{
+    position: absolute;
+    content: "";
+    height:5px;
+    width: 75%;
+    background-color: rgba(255, 229, 0, 1);
+    bottom: -5px;
+    left:20px;
+    border-radius: 50px;
+}
+.Pages li a {
+    opacity: 0.7;
+    transition: all 0.5s ease 0s;
+}
+.Pages li a:hover{
+    color:rgba(255, 229, 0, 1);
+    opacity: 1;
+}
+.Welcome{
+    display: flex;
+    position: relative;
+    background-image: url('Images/x2.jpg');
+    color:whitesmoke;
+    padding:15% ;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    box-shadow: 0px 4px 8px black;
+}
+.Welcome h2{
+    font-size:45px;
+    margin-left:2%;
+    margin-right: 2%;
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    font-family:"Montserrat", sans-serif;
+}
+
+.Legends1{
+    margin-top: 30px;
+}
+.Legends2{
+    margin-top: 10px;
+}
+.Legends3{
+    margin-top: 10px;
+}
+.Legends4{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.Legend{
+    width:300px;
+    height: 300px;
+    border: 1px solid #000000;
+    margin:15px;
+    display: inline-block;
+    text-align: left;
+    line-height: 200px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px black;
+}
+.Legend p{
+    padding-top: 120px;
+    font-size:28px;
+    margin-left:2%;
+    margin-right: 2%;
+    position: relative;
+    bottom:0px;
+    left:0px;
+    font-family:"Montserrat", sans-serif;
+    opacity:0.7;
+    transition: all 0.3s ease 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Legend p::before{
+    content: '';
+    width:120px;
+    height: 3px;
+    position: absolute;
+    background-color:#fa0000;
+    bottom: 125px;
+}
+
+.Legend p:hover{
+    color:rgba(255, 229, 0, 1);
+    opacity: 1;
+    transform: scale(1.03);
+}
+#One{
+    background-image: url('Images/Giggs.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Two{
+    background-image: url('Images/Charlton.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Three{
+    background-image: url('Images/Scholes.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Four{
+    background-image: url('Images/Rooney.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Five{
+    background-image: url('Images/Keane.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Six{
+    background-image: url('Images/Best.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Seven{
+    background-image: url('Images/Rio.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Eight{
+    background-image: url('Images/Hughes.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Nine{
+    background-image: url('Images/Ruud.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Ten{
+    background-image: url('Images/Ronaldo.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Eleven{
+    background-image: url('Images/Ole.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Twelve{
+    background-image: url('Images/Cole.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Thirteen{
+    background-image: url('Images/Beckham.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Fourteen{
+    background-image: url('Images/Cantona.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Fifteen{
+    background-image: url('Images/Vidic.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Sixteen{
+    background-image: url('Images/Sar.jpg');
+    color:whitesmoke;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer .Container{
+    background-color:#781a1f;
+}
+.Row{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.Col h4{
+    color:whitesmoke;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+}
+.Col h4::after{
+    position: absolute;
+    content: "";
+    height:5px;
+    background-color: #808080;
+    bottom: -10px;
+    border-radius: 50px;
+}
+#Pro::after{
+    width: 69%;
+    left:27px;
+}
+#News::after{
+    width: 47%;
+    left:72px;
+}
+#Visit::after{
+    width: 21%;
+    left:159px;
+}
+.Col ul{
+    list-style: none;
+    display: inline-block;
+}
+.Col ul li{
+    padding: 10px 0;
+    justify-content:first baseline;
+    display: flex;
+    margin-left:-10px;
+    font-size: 18px;
+}
+.Col ul li a{
+color:whitesmoke;
+text-decoration: none;
+font-size: 22px;
+opacity:0.7;
+transition: 0.3s;
+}
+.Col ul li a:hover{
+    color:rgba(255, 229, 0, 1);
+    opacity: 1;
+}
+.Col input{
+    border:none;
+    width:250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+button{
+    padding: 18px 50px;
+    background-color: #808080;
+    color:#000000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.3s;
+    margin-top: 30px;
+}
+button:hover{
+    background-color:rgba(255, 229, 0, 1);
+    transform: scale(1.2);
+}
+hr{
+    margin-bottom: -20px;
+   background-color:#808080;
+}
+.Column p{
+    color: whitesmoke;
+    margin-bottom: -40px;
+}
+.Social i {
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 40px;
+    margin: 0 29px;
+    transition:0.3s;
+}
+.Social i:hover{
+    color: rgba(255, 229, 0, 1);
+    transform: scale(1.2);
+}
